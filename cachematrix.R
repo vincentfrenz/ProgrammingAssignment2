@@ -4,8 +4,6 @@
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
-  #cachematrix <- function() m
-  #list(cachematrix = cachematrix)
   set <- function(y) {
     x <<- y
     m <<- NULL
@@ -30,7 +28,7 @@ cacheSolve <- function(x, ...) {
   m
 }
 
-m1 = matrix(c(1/2, -1/4, -1, 3/4), nrow = 2, ncol = 2)
-m2 = matrix(c(2,0,0,0,1,0,1,1,1), nrow = 3, ncol = 3)
+#cacheSolve(makeCacheMatrix(matrix(c(1/2, -1/4, -1, 3/4), nrow = 2, ncol = 2)))
 
-cacheSolve(makeCacheMatrix(matrix(c(1/2, -1/4, -1, 3/4), nrow = 2, ncol = 2)))
+#cacheSolve(makeCacheMatrix(matrix(c(2,0,0,0,1,0,1,1,1), nrow = 3, ncol = 3)))
+           
